@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TS Crash Course</title>
+  </head>
+  <body class="bg-slate-900">
+    <div id="app">
+      <form
+        id="add-user-form"
+        class="flex flex-col gap-5 max-w-xl p-6 my-10 mx-auto bg-slate-800 rounded-md"
+      >
+        <input
+          type="text"
+          placeholder="Name"
+          id="name"
+          class="p-2 bg-slate-600 text-slate-300 outline-none rounded-md"
+        />
+        <input
+          type="text"
+          placeholder="Email"
+          id="email"
+          class="p-2 bg-slate-600 text-slate-300 outline-none rounded-md"
+        />
+        <button
+          type="submit"
+          class="p-2 bg-slate-900 text-slate-100 rounded-md"
+        >
+          Add User
+        </button>
+      </form>
+      <div
+        id="user-list"
+        class="flex flex-wrap justify-center max-w-xl mx-auto my-10 gap-5"
+      ></div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
